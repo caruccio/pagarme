@@ -30,6 +30,7 @@ def pay():
 		'api_key': API_KEY,
 		'amount': 1000,
 		'card_id': request.query['card_id'],
+		'card_cvv': request.query['card_cvv'],
 		#'postback_url': 'http://requestb.in/1999u831',
 	}
 	print 'TRANSACTION DATA: ', trans_data
